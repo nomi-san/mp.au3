@@ -69,6 +69,13 @@ EXPORT INT MP_Init()
     return 1;
 }
 
+EXPORT int MP_Index()
+{
+    if (MP_IsMain()) return -1;
+
+    return g_currentIdx;
+}
+
 EXPORT void MP_Wait(int index)
 {
     if (!MP_IsMain()) return;

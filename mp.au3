@@ -39,7 +39,7 @@ endFunc
 ;~		0+ 	- Sub process
 ;~		-99 - Error
 func _MP_Index()
-	local $aRet = DllCall($__MP_hDll, 'int:cdecl', 'MP_IsMain')
+	local $aRet = DllCall($__MP_hDll, 'int:cdecl', 'MP_Index')
 	if not IsArray($aRet) or @error then return -99
 	return $aRet[0]
 endFunc

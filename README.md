@@ -6,6 +6,15 @@ Yet another multi-process library for AutoIt3
 - High performance
 - Support IPC, via COM object and message events
 
+## usage
+
+Just copy **mp.au3** and DLLs from [release](https://github.com/nomi-san/mp.au3/releases) into your project.
+
+You can build DLL from source, e.g with **MSVC**:
+```
+$ cl /MT /LD /O2 mp.cc user32.lib kernel32.lib oleaut32.lib
+```
+
 ## how it works?
 
 We emulate the "fork process" technique with `CreateProcess()`.

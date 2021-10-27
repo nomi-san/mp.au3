@@ -228,8 +228,6 @@ static struct MetaData {
     UINT length;
 } g_meta;
 
-#include <string>
-
 static DWORD WINAPI Thread_Getter(MetaData *param);
 static void GetElement(UINT32 hash, VARIANT *value)
 {
